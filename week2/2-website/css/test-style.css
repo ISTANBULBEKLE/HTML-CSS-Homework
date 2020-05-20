@@ -18,11 +18,24 @@ body {
  */
 
 .top-navigation {
-	display: flex;
 }
 
 .content {
+	display: flex;
+	border: 4px green;
+	padding: 2rem;
+	margin: 2rem;
 }
 
 .links {
+	display: flex;
+}
+.links li {
+	justify-content: center;
+	padding: 1rem;
+	margin: 1rem 2rem 1rem 1rem;
+	order: 1;
+}
+
+.logo {
 }
