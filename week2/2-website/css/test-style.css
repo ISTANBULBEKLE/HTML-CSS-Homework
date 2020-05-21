@@ -21,31 +21,37 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	height: -1rem;
+	background-color: white;
+	position: fixed;
 }
 
 .content {
 	display: flex;
-	border: 4px green;
-	padding: 2rem;
-	margin: 2rem;
+	border: 2px;
+	padding: 1rem;
+	margin: 1rem;
 	height: 3rem;
 	justify-content: flex-end;
 }
 
 .links {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	list-style-type: none;
 	font-size: 1.1rem;
 }
 .links li {
-	justify-content: center;
 	padding: 1rem;
 	margin: 1rem 2rem 1rem 1rem;
+	align-content: flex-start;
 }
 
 .logo {
-	height: 4rem;
-	width: 3rem;
+	height: 2.75rem;
+	width: 2.75rem;
+	margin-right: 5rem;
 }
 
 .introduction {
@@ -55,5 +61,29 @@ body {
 	background-size: cover;
 	overflow: auto;
 	width: 100%;
-	height: 44rem;
+	height: 50rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.introduction .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.introduction h1 {
+	font-size: 3rem;
+	font-weight: lighter;
+	margin: 1rem;
+}
+.introduction h3 {
+	font-size: 2rem;
+	font-weight: lighter;
+	margin: 1rem;
+}
+.button button {
+	background-color: red;
 }
