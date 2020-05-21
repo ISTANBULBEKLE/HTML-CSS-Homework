@@ -4,6 +4,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	margin: 0px;
+	padding: 0;
 	font-size: 62.5%;
 }
 
@@ -17,22 +18,24 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+/* Navigation bar styling   */
 .top-navigation {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: -1rem;
+	height: 5rem;
 	background-color: white;
 	position: fixed;
 }
 
-.content {
+.content-nav {
 	display: flex;
 	border: 2px;
-	padding: 1rem;
-	margin: 1rem;
+	padding: 0.50rem;
+	margin: 0.50rem;
 	height: 3rem;
-	justify-content: flex-end;
+	justify-content: center;
+	align-content: center;
 }
 
 .links {
@@ -41,11 +44,25 @@ body {
 	align-items: center;
 	list-style-type: none;
 	font-size: 1.1rem;
+	padding: 0.50rem;
+	margin: 0.50rem;
+	align-content: center;
 }
 .links li {
-	padding: 1rem;
-	margin: 1rem 2rem 1rem 1rem;
+	padding: 0.50rem;
+	margin: 1rem 1rem 1rem 1rem;
 	align-content: flex-start;
+	cursor: pointer;
+}
+.links li {
+	color: rgb(189, 184, 184);
+}
+
+.links li:hover {
+	color: rgb(61, 57, 57);
+}
+.links .active {
+	color: rgb(24, 23, 23);
 }
 
 .logo {
@@ -54,6 +71,7 @@ body {
 	margin-right: 5rem;
 }
 
+/* Section-1 Introduction styling   */
 .introduction {
 	background: url(../img/first-background.jpg);
 	background-position: center bottom;
@@ -68,7 +86,7 @@ body {
 	color: white;
 }
 
-.introduction .content {
+.content-section-1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -84,6 +102,163 @@ body {
 	font-weight: lighter;
 	margin: 1rem;
 }
-.button button {
-	background-color: red;
+
+button {
+	background-color: #f15a29;
+	color: white;
+	text-align: center;
+	font-size: 1.80rem;
+	cursor: pointer;
+	border-radius: 0.2rem;
+	border-color: #f15a29;
+	width: 12rem;
+	padding: 1rem 1.5rem;
+	margin: 2rem;
 }
+
+button:hover {
+	background-color: #ec6c39fd;
+}
+
+/* Section-2 Cases styling   */
+.cases {
+	display: flex;
+	justify-content: center;
+}
+.content-cases {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.content-cases h2 {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: lighter;
+	margin-top: 8rem;
+}
+
+.devices {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.devices li {
+	padding-right: 1rem;
+	padding-left: 1rem;
+	margin-right: 1rem;
+	margin-left: 1rem;
+	list-style-type: none;
+	align-content: center;
+}
+
+li img {
+	width: 50%;
+	height: 50%;
+}
+.caption {
+}
+li h3 {
+	font-size: 2rem;
+	font-weight: lighter;
+	text-align: center;
+}
+
+/* Footer styling   */
+
+.social {
+	display: flex;
+	flex-direction: column;
+}
+
+.content-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+hr {
+	width: 70%;
+	text-align: center;
+}
+.content-footer h5 {
+	font-size: 1.2rem;
+	font-weight: normal;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	list-style-type: none;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.icons li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	margin-right: 1rem;
+	margin-left: 1rem;
+	text-align: center;
+	box-sizing: border-box;
+}
+.twitter {
+	font-size: 1.3rem;
+	color: #55acee;
+	width: 2.5rem;
+	height: 2.5rem;
+	border: 0.1rem solid #c3c5c7;
+	border-radius: 2.5rem;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.twitter:hover {
+	cursor: pointer;
+}
+
+.facebook {
+	color: #4c66a4;
+	font-size: 1.3rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	border: 0.1rem solid #c3c5c7;
+	border-radius: 2.5rem;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.facebook:hover {
+	cursor: pointer;
+}
+
+.instagram {
+	color: #3f729b;
+	font-size: 1.3rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	border: 0.1rem solid #c3c5c7;
+	border-radius: 2.5rem;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.instagram:hover {
+	cursor: pointer;
+}
+.copy {
+	font-size: 1rem;
+	font-weight: lighter;
+	text-align: center;
+}
+
+/*	End of styling  */
